@@ -30,7 +30,7 @@ public class DogController {
 
     @RequestMapping("add")
     public ModelAndView add() {
-        mv.setViewName("addNewDog.html");
+    	mv.setViewName("addNewDog");
         Iterable<Trainer> trainerList = trainerRepo.findAll();
         mv.addObject("trainers", trainerList);
         return mv;
